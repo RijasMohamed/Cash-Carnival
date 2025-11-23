@@ -1,6 +1,4 @@
-git add .
-git commit -m "describe change"
-git push(function (root, factory) {
+(function (root, factory) {
     if (typeof module === "object" && module.exports) {
         module.exports = factory();
     } else {
