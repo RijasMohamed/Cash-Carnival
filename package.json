@@ -1,0 +1,29 @@
+{
+  "name": "cash-carnival",
+  "version": "1.0.0",
+  "description": "CLI and browser-based slot machine game.",
+  "main": "src/cli/index.js",
+  "scripts": {
+    "start": "node src/cli/index.js",
+    "cli": "node src/cli/index.js",
+    "build:engine": "node scripts/copy-engine.js",
+    "dev": "npm run build:engine && lite-server --baseDir=docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RijasMohamed/Cash-Carnival.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RijasMohamed/Cash-Carnival/issues"
+  },
+  "homepage": "https://github.com/RijasMohamed/Cash-Carnival#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

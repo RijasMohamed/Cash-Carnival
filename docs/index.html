@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Carnival</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main class="app">
+        <header class="app__header">
+            <h1>Cash Carnival</h1>
+            <p class="subtitle">Try your luck on our 3x3 slot machine.</p>
+        </header>
+
+        <section class="bankroll">
+            <h2>Bankroll</h2>
+            <p class="balance">Balance: <span id="balance" data-balance>$0.00</span></p>
+            <form id="deposit-form" class="form-inline">
+                <label for="deposit-amount">Deposit amount</label>
+                <input type="number" id="deposit-amount" min="1" step="1" required>
+                <button type="submit">Add Funds</button>
+            </form>
+        </section>
+
+        <section class="controls">
+            <h2>Bet Controls</h2>
+            <div class="control-grid">
+                <label>
+                    Lines
+                    <select id="line-count">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3" selected>3</option>
+                    </select>
+                </label>
+                <label>
+                    Bet per Line
+                    <input type="number" id="bet-per-line" min="1" step="1" value="1">
+                </label>
+                <button id="spin-button" class="primary" disabled>Spin</button>
+            </div>
+        </section>
+
+        <section class="reels" id="reels">
+            <div class="reel-row placeholder">Spin the reels to see results!</div>
+        </section>
+
+        <section class="messages" id="messages"></section>
+    </main>
+
+    <script src="./js/slotMachine.js"></script>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
