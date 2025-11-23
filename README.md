@@ -91,6 +91,8 @@ docs/
   |- index.html          # Browser UI
   |- styles.css          # Styling
   |- app.js              # Browser controller
+  |- assets/
+     |- bg.jpg           # Slot floor background image
   |- js/slotMachine.js   # Generated copy for GitHub Pages
 ```
 
